@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Admission Form</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+.container{
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.container .text{
+  text-align: center;
+  font-size: 1px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: black;
+}
+.container form{
+  padding: 30px 0 0 0;
+}
+.container form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
+      </style>
+   </head>
+   <body>
+      <div class="container">
+        <div style="float: left;">
+            <img src="logo.jpg" alt="Logo" width="150px" height="135px" style="margin-left: 0px; margin-top: 30px; margin-bottom: 80px;">
+          </div>
+      <div class="text" style="font-size: 10px;">
+         <div class="form-row">
+            <div class="input-data">
+               <p style="float: left;">स्व .  द्वारकाप्रसाद बहुउद्देशिय संस्था , वर्धा  </p>
+            </div>
+            <div class="input-data">
+               <p style="float: right;">रजि .  नं . महा  -  ७३ / २०१४</p>
+            </div>
+         </div><br>
+        <h1 id="a" style="font-size: 60px;font-style: italic;
+        font-family: 'Times New Roman', Times, serif;">Mother Care School</h1>
+        <div class="form-row">
+         <div class="input-data">
+            <pre style="float: left; font-size: 15px; font-family: cursive;">     C.B.S.E.</pre>
+         </div>
+         <div class="input-data">
+            <p style="float: right; font-size: 15px; font-family: cursive;">Play learn & Grow Together</p>
+         </div>
+      </div><br><br>
+      <div><hr><br>
+        <!-- <h4 id="b" style="font-size: 18px;"><pre>  C.B.S.E.                                   Play learn & Grow Together</pre></h4> -->
+        <p style="text-align: left; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14px;"><b>Address</b> : Utkarsh Colony, Dwars Traders, Karla Road, Wardha.</p>
+        <p style="text-align: left; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14px;"><b>Phone No.</b> : 9822237405, 8007875108</p>
+        <p style="text-align: left; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14px;"><b>Email ID</b> : mothercare157@gmail.com</p><br>
+      </div>
+      </div><br>
+      <form action="javascript:sendmail()" method="post">
+        <p style="text-align: left;font-size: large;font-family: 'Times New Roman', Times, serif;"><b><u>STUDENT INFORMATION</u></b></p>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="Name" autocomplete="off">
+               <div class="underline"></div>
+               <label for="">Name</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="dob">
+               <div class="underline"></div>
+               <label for="">Date of Birth</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required id="Age">
+               <div class="underline"></div>
+               <label for="">Age</label>
+            </div>
+            <div class="input-data">
+                <input type="text" required id="BirthPlace">
+                <div class="underline"></div>
+                <label for="">Place of Birth</label>
+             </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" id="SchoolName" required>
+               <div class="underline"></div>
+               <label for="">Present School</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required id="Location">
+               <div class="underline"></div>
+               <label for="">Location</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="Admission">
+               <div class="underline"></div>
+               <label for="">Admission to Std.</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required id="Nationality">
+               <div class="underline"></div>
+               <label for="">Nationality</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="Religion">
+               <div class="underline"></div>
+               <label for="">Religion</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required id="Cast">
+               <div class="underline"></div>
+               <label for="">Caste</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data textarea">
+                <textarea rows="8" cols="80" required id="Address"></textarea>
+               <div class="underline"></div>
+               <label for="">Residential Address</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="City">
+               <div class="underline"></div>
+               <label for="">City</label>
+            </div>
+            <div class="input-data">
+               <input type="text" id="PinCode" required>
+               <div class="underline"></div>
+               <label for="">Pin Code</label>
+            </div>
+         </div>
+         <h5 style="float: left; font-size: large;font-style: inherit;"><u>FAMILY INFORMATION</u></h5><br>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="FatherName">
+               <div class="underline"></div>
+               <label for="">Father Name</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required id="MotherName">
+               <div class="underline"></div>
+               <label for="">Mother Name</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="FatherAge">
+               <div class="underline"></div>
+               <label for="">Father's Age</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required id="MotherAge">
+               <div class="underline"></div>
+               <label for="">Mother's Age</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="FatherEducation">
+               <div class="underline"></div>
+               <label for="">Father's Education</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required id="MotherEducation">
+               <div class="underline"></div>
+               <label for="">Mother's Education</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Father's Occupation</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Mother's Occupation</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="FatherOrganization">
+               <div class="underline"></div>
+               <label for="">Father's Organization</label>
+            </div>
+            <div class="input-data">
+               <input type="text" id="MotherOrganization" required>
+               <div class="underline"></div>
+               <label for="">Mother's Organization</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="FatherDesignation">
+               <div class="underline"></div>
+               <label for="">Father's Designation</label>
+            </div>
+            <div class="input-data">
+               <input type="text" id="MotherDesignation" required>
+               <div class="underline"></div>
+               <label for="">Mother's Designation</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="FatherMobile">
+               <div class="underline"></div>
+               <label for="">Father's Mobile No.</label>
+            </div>
+            <div class="input-data">
+               <input type="text" id="MotherMobile" required>
+               <div class="underline"></div>
+               <label for="">Mother's Mobile No.</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="FatherEmail">
+               <div class="underline"></div>
+               <label for="">Father's Email ID</label>
+            </div>
+            <div class="input-data">
+               <input type="text" id="MotherEmail" required>
+               <div class="underline"></div>
+               <label for="">Mothers Email ID</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="FatherAnnualIncome">
+               <div class="underline"></div>
+               <label for="">Father's Annual Income</label>
+            </div>
+            <div class="input-data">
+               <input type="text" id="MotherAnnualIncome" required>
+               <div class="underline"></div>
+               <label for="">Mother's Annual Income</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required id="Language">
+               <div class="underline"></div>
+               <label for="">Language you prefer for communication (English, Hindi, Marathi)</label>
+            </div>
+         </div>
+         <h5 style="float: left; font-size: large; font-family: Georgia, serif;"><u>Declaration</u></h5><br>
+         <div class="form-row" style="font-size: 15px;">
+            <p>We declare that the information furnished in the application form is true and correct to our knowledge.
+                We shall abide by the school's standard terms now or introduce in future. We also undertake to meet all
+                financial responsibilities in time regarding the study of our child in school.</p>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Place</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Date</label>
+            </div>
+         </div>
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" value="submit">
+               </div>
+            </div>
+      </form>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+
+    function sendmail() {
+      
+    var name = $('#Name').val();
+    var dob = $('#dob').val();
+    var age = $('#Age').val();
+    var birthplace = $('#BirthPlace').val();
+    var school = $('#SchoolName').val();
+    var location = $('#Location').val();
+    var admission = $('#Admission').val();
+    var nationality = $('#Nationality').val();
+    var religion = $('#Religion').val();
+    var cast = $('#Cast').val();
+    var address = $('#Address').val();
+    var city = $('#City').val();
+    var pincode = $('#PinCode').val();
+    var fathername = $('#FatherName').val();
+    var mothername = $('#MotherName').val();
+    var fatherage = $('#FatherAge').val();
+    var fathereducation = $('#FatherEducation').val();
+    var motherage = $('#MotherAge').val();
+    var mothereducation = $('#MotherEducation').val();
+    var fatherorganization = $('#FatherOrganization').val();
+    var motherorganization = $('#MotherOrganization').val();
+    var fatherdesignation = $('#FatherDesignation').val();
+    var motherdesignation = $('#MotherDesignation').val();
+    var fathermobile = $('#FatherMobile').val();
+    var mothermobile = $('#MotherMobile').val();
+    var fatheremail = $('#FatherEmail').val();
+    var motheremail = $('#MotherEmail').val();
+    var fatherincome = $('#FatherAnnualIncome').val();
+    var motherincome = $('#MotherAnnualIncome').val();
+    var language = $('#Language').val();
+  
+      // var body = $('#body').val();
+
+      var Body = '<h4><i><u>STUDENT INFORMATION : </u></i></h4><b>Name :</b> ' + name + '<br><b>Date Of Birth :</b> ' + dob + '<br><b>Age :</b> ' + age + '<br><b>Place of Birth :</b> ' + birthplace
+      + '<br><b>Present School Name :</b> ' + school + '<br><b>Location :</b> ' + location + '<br><b>Admission to Std. :</b> ' + admission
+      + '<br><b>Nationality :</b> ' + nationality + '<br><b>Religion : </b> ' + religion + '<br><b>Caste :</b> ' + cast + '<br><b>Residential Address :</b> ' + address
+      + '<br><b>City :</b> ' + city + '<br><b>Pincode : </b> ' + pincode + '<br><h4><i><u>PARENT INFORMATION : </u></i></h4><b>Father Name :</b> ' + fathername + '<br><b>Mother Name :</b> ' + mothername
+      + '<br><b>Father Age :</b> ' + fatherage + '<br><b>Father Education :</b> ' + fathereducation + '<br><b>Mother Age :</b> ' + motherage
+      + '<br><b>Mother Education :</b> ' + mothereducation + '<br><b>Father Organization :</b> ' +  fatherorganization + '<br><b>Mother Organization :</b> ' +  motherorganization + '<br><b>Father Designation :</b> ' +  fatherdesignation + '<br><b>Mother Designation :</b> ' +  motherdesignation + '<br><b>Father Contact Details :</b> ' + fathermobile + '<br><b>Mother Contact Details :</b> ' 
+      + mothermobile + '<br><b>Father Email ID :</b> ' + fatheremail + '<br><b>Mother Email ID :</b> ' + motheremail + '<br><b>Father Annual Income :</b> ' 
+      + fatherincome + '<br><b>Mother Annual Income :</b> ' + motherincome + '<br><b>Preferred Language :</b> ' + language;
+      //console.log(name, phone, email, message);
+
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "noreply.mothercare@gmail.com",
+        Password: "yhtlnwqinzpnxujp",
+        To: 'shubhamchauhan79@gmail.com',
+        From: "noreply.mothercare@gmail.com",
+        Subject: "Admission Alert - " + name,
+        Body: "<h3><i><u>MOTHER CARE SCHOOL ADMISSION DETAILS</u></i></h3>" + Body + "<br><br><b>FOR OFFICE USE ONLY:</b><br><pre>We are in receipt of amount of Rs.<u>         </u> For admission and other fees, vide receipt No. <u>        </u> dated <u>         </u><br></pre><b>ACCOUNTS INCHARGE</b><br><pre>Master/Ms <u>                                 </u> son/daughter of <u>                               </u> is admitted to std <u>            </u> for the academic year <u>             </u>.</pre>"
+      }).then(
+        message => {
+          //console.log (message);
+          if (message == 'OK') {
+            // alert('Your mail has been send. Thank you for connecting.');
+            window.location.href = "thankyou.html";
+          }
+          else {
+            console.error(message);
+            alert('There is error at sending message. Please try again later.')
+
+          }
+
+        }
+      );
+
+
+
+    }
+
+
+  </script>
+   </body>
+</html>
